@@ -1,0 +1,115 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    position: relative;
+    top: 178px;
+    display: flex;
+    flex-direction: column;
+}
+.your-orders{
+    margin: 12px auto;
+    color:#8c2a2a;
+}
+#list-orderdetail{
+    margin: 16px auto;
+    border-collapse: collapse;
+    margin-bottom: 150px;
+}
+.theader{
+    border-bottom: 3px solid #beb6b6;
+}
+.orderdetail-id, .tbody__orderdetail-id{
+    padding: 12px 10px;
+    word-wrap: break-word;
+    max-width: 130px;
+    text-align: center;
+}
+
+.product-name, .tbody__product-name{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 600px;
+}
+
+.quantity, .tbody__quantity{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 150px;
+    text-align: center;
+}
+.product-unit, .tbody__product-unit{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 150px;
+    text-align: center;
+}
+.price, .tbody__price{
+    padding: 12px 20px;
+    word-wrap: break-word;
+    max-width: 450px;
+    text-align: center;
+}
+.tbody__total-price, .total-price{
+    padding: 12px 20px;
+    word-wrap: break-word;
+    max-width: 450px;
+    text-align: center;
+}
+.product-link{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    margin: auto 12px;
+}
+
+.product-link:hover{
+    color: #6e814e;
+}
+.product-image{
+    max-width: 150px;
+    max-height: 200px;
+    margin: auto 0;
+    padding: 8px 8px;
+}
+.tbody__product-name{
+    line-height: 200px;
+}
+tr > td{
+    padding: 12px 8px;
+    
+}
+
+td{
+    font-size: 18px;
+}
+th{
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+
+.tbody__order-id > a{
+    color: #335bde;
+    text-decoration: none;
+}
+.tbody__order-id > a:hover{
+    color:#ed3131;
+}
+tr.tbody:nth-of-type(odd) td{
+    background-color:#eee4e4;
+}
+        
+tr.tbody:nth-of-type(even) td{
+    background-color:#e3f2eb;
+}
+tr.tbody:hover td{
+    cursor: pointer;
+    background-color: rgb(168, 178, 217);
+}

@@ -1,0 +1,116 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    position: relative;
+    top: 178px;
+    display: flex;
+    flex-direction: column;
+}
+.your-orders{
+    margin: 12px auto;
+    color:#8c2a2a;
+}
+#list-orders{
+    margin: 16px auto;
+    border-collapse: collapse;
+    margin-bottom: 150px;
+}
+.theader{
+    border-bottom: 3px solid #beb6b6;
+}
+.order-id, .tbody__order-id{
+    padding: 12px 10px;
+    word-wrap: break-word;
+    max-width: 100px;
+}
+
+.customer-name, .tbody__customer-name{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 220px;
+}
+
+.phonenumber, .tbody__phonenumber{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 140px;
+}
+
+.address, .tbody__address{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+.order-date, .tbody__order-date{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 160px;
+}
+
+.status, .tbody__status{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 120px;
+}
+
+.total-money, .tbody__total-money{
+    padding: 12px 10px;
+    word-wrap: break-word;
+    max-width: 140px;
+}
+.note, .tbody__note{
+    padding: 12px 15px;
+    word-wrap: break-word;
+    max-width: 180px;
+}
+
+tr > td{
+    padding: 12px 8px;
+    text-align: center;
+}
+
+td{
+    font-size: 18px;
+}
+th{
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+tr{
+    border-bottom: 2px solix #e51b1b;
+}
+
+.tbody__order-id > a{
+    color: #335bde;
+    text-decoration: none;
+}
+.tbody__order-id > a:hover{
+    color:#ed3131;
+}
+tr.tbody:nth-of-type(odd) td{
+    background-color:#eee4e4;
+}
+        
+tr.tbody:nth-of-type(even) td{
+    background-color:#fff;
+}
+tr.tbody:hover td{
+    cursor: pointer;
+    background-color: rgb(168, 178, 217);
+}
+.cancel-btn{
+    padding: 4px 6px;
+    background-color: #ed3131;
+    color: antiquewhite;
+    margin-top: 4px;
+    font-size: 15x;
+}
