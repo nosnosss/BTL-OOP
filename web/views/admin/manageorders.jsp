@@ -96,10 +96,15 @@
                 %>
                 <form action="manageorders" class="form-search" method="POST">
                     <input id="search-input" type="text" name="search-input" value="<%= search_input %>" placeholder="Nhập số điện thoại nhận hàng">
-                    <input id="start-date" type="date" name="start-date" value="<%= request.getAttribute("start_date") %>">
-                    <input id="end-date" type="date" name="end-date" value="<%= request.getAttribute("end_date") %>">
+
+                    <div class="date-range-container">
+                        <input id="start-date" type="date" name="start-date" value="<%= request.getAttribute("start_date") %>">
+                        <input id="end-date" type="date" name="end-date" value="<%= request.getAttribute("end_date") %>">
+                    </div>
+
                     <input id="search-btn" type="submit" value="Tìm kiếm">
                 </form>
+
 
                 <%
                   List<Order> orders = (List<Order>)request.getAttribute("orders");  
