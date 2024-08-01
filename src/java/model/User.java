@@ -13,19 +13,21 @@ public class User {
     private int id;
     private Role role;
     private String fullname, phoneNumber, email, password;
+    private boolean active;
     //comments
     //orders
 
     public User() {
     }
 
-    public User(int id, Role role, String fullname, String phoneNumber, String email, String password) {
+    public User(int id, Role role, String fullname, String phoneNumber, String email, String password, boolean active) {
         this.id = id;
         this.role = role;
         this.fullname = fullname;
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.password = password;
+        this.active = active;
     }
 
     public int getId() {
@@ -74,6 +76,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
     
     

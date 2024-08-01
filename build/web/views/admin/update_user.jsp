@@ -124,6 +124,13 @@
                             <label for="password">Mat Khau:</label>
                             <input id="password" type="text" readonly value="${user.password}">
                         </div>
+                        <div class="form-input active">
+                            <label for="password">Hoat Dong:</label>
+                            <select name="active" id="active">
+                                <option value="true" ${user.active ? 'selected' : ''}>Active</option>
+                                <option value="false" ${!user.active ? 'selected' : ''}>Inactive</option>
+                            </select>
+                        </div>
                         <div class="form-input">
                             <button type="submit" class="btn">Xac Nhan</button>
                         </div>

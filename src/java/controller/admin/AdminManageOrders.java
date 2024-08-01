@@ -36,20 +36,45 @@ public class AdminManageOrders extends HttpServlet {
         }
     } 
 
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+//    throws ServletException, IOException {
+//        String phone = request.getParameter("search-input").trim();
+//        OrderDAO orderDAO = new OrderDAO();
+//        
+//        try {
+//            List<Order> orders = orderDAO.getByPhonenumber(phone);
+//            request.setAttribute("search_input", phone);
+//            request.setAttribute("orders", orders);
+//            request.getRequestDispatcher("views/admin/manageorders.jsp").forward(request, response);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(AdminManageOrders.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         String phone = request.getParameter("search-input").trim();
+        String startDate = request.getParameter("start-date");
+        String endDate = request.getParameter("end-date");
+
         OrderDAO orderDAO = new OrderDAO();
-        
+
         try {
-            List<Order> orders = orderDAO.getByPhonenumber(phone);
+            List<Order> orders;
+            if (startDate != null && endDate != null && !startDate.isEmpty() && !endDate.isEmpty()) {
+                orders = orderDAO.getByDateRange(startDate, endDate);
+            } else {
+                orders = orderDAO.getByPhonenumber(phone);
+            }
             request.setAttribute("search_input", phone);
+            request.setAttribute("start_date", startDate);
+            request.setAttribute("end_date", endDate);
             request.setAttribute("orders", orders);
             request.getRequestDispatcher("views/admin/manageorders.jsp").forward(request, response);
         } catch (SQLException ex) {
             Logger.getLogger(AdminManageOrders.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
+
 }

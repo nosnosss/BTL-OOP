@@ -103,8 +103,8 @@
                                 <th>Số Điện Thoại</th>
                                 <th>Email</th>
                                 <th>Mật Khẩu</th>
-                                <th>Xoa</th>
-                                <th>Sua</th>
+                                <th>Sửa</th>
+                                <th>Xóa</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -116,7 +116,7 @@
                                     <td>${user.phoneNumber}</td>
                                     <td>${user.email}</td>
                                     <td>${user.password}</td>
-                                    <td><a class ="ti-settings"  href="update_user?id=${user.id}">Sua</a></td>
+                                    <td><a class ="ti-settings"  href="update_user?id=${user.id}">Sua</a></td>                                   
                                     <td><a class = "ti-trash" href="#" onclick="deleteUser(${user.id})">Xoa</a></td>
                                 </tr>
                             </c:forEach>

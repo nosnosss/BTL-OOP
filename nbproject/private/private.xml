@@ -3,21 +3,32 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminDeleteCategory.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/DeleteComments.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserCart.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/filter/UserSignInFilter.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserOrderDetail.java</file>
+            <file>file:/D:/BTLWeb/Webn1/web/views/user/orders.jsp</file>
+            <file>file:/D:/BTLWeb/Webn1/web/WEB-INF/web.xml</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminUpdateProduct.java</file>
             <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminUpdateUser.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminDeleteProduct.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserChangePassword.java</file>
+            <file>file:/D:/BTLWeb/Webn1/web/views/admin/updateproduct.jsp</file>
+            <file>file:/D:/BTLWeb/Webn1/web/views/user/ordersuccess.jsp</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminProductServlet.java</file>
+            <file>file:/D:/BTLWeb/Webn1/nbproject/project.properties</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/dal/OrderDAO.java</file>
+            <file>file:/D:/BTLWeb/Webn1/build.xml</file>
+            <file>file:/D:/BTLWeb/Webn1/web/views/admin/thongke.jsp</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/AllProductServlet.java</file>
+            <file>file:/D:/BTLWeb/Webn1/nbproject/build-impl.xml</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminUpdateCategory.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserSignIn.java</file>
+            <file>file:/D:/BTLWeb/Webn1/web/index.html</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminManageOrders.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/dal/UserDAO.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminManageOrderDetail.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/model/Order.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/dal/OrderDaoStatsitic.java</file>
             <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserOrders.java</file>
             <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserCheckout.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/filter/PreviousPageFilter.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/AddComments.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/extension/Encrypt.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserProfile.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminAddCategory.java</file>
-            <file>file:/D:/BTLWeb/Webn1/src/java/controller/user/UserSignIn.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminStatsiticServlet.java</file>
+            <file>file:/D:/BTLWeb/Webn1/src/java/controller/admin/AdminSignIn.java</file>
             <file>file:/D:/BTLWeb/Webn1/src/java/filter/AdminAccessFilter.java</file>
         </group>
     </open-files>

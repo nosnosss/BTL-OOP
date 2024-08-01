@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 import model.Order;
 
 
-@WebServlet(name="AdminManageOrderDetail", urlPatterns={"/manageorderdetail"})
+    @WebServlet(name="AdminManageOrderDetail", urlPatterns={"/manageorderdetail"})
 public class AdminManageOrderDetail extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

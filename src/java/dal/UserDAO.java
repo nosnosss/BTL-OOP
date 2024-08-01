@@ -54,13 +54,14 @@ public class UserDAO extends ConnectDB {
 
     //them tai khoan
     public int addUser(User user) {
-        String sql = "insert into users (fullname, email, password, phone_number) values (?, ?, ?, ?)";
+        String sql = "insert into users (fullname, email, password, phone_number, active) values (?, ?, ?, ?, ?)";
         try {
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, user.getFullname());
             statement.setString(2, user.getEmail());
             statement.setString(3, user.getPassword());
             statement.setString(4, user.getPhoneNumber());
+            statement.setBoolean(5, true);
             return statement.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e);
@@ -108,6 +109,7 @@ public class UserDAO extends ConnectDB {
                 user.setPhoneNumber(rs.getString("phone_number"));
                 user.setEmail(rs.getString("email"));
                 user.setPassword(rs.getString("password"));
+                user.setActive(rs.getBoolean("active"));
                 return user;
             }
         } catch (SQLException e) {
@@ -118,7 +120,7 @@ public class UserDAO extends ConnectDB {
 
     //sua tai khoan
     public int updateUser(User user) {
-        String sql = "update users set role_id = ? , fullname = ? , phone_number = ?, password = ? where id = ?";
+        String sql = "update users set role_id = ? , fullname = ? , phone_number = ?, password = ?, active = ? where id = ?";
         System.out.println(sql);
         try {
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -126,7 +128,8 @@ public class UserDAO extends ConnectDB {
             statement.setString(2, user.getFullname());
             statement.setString(3, user.getPhoneNumber());
             statement.setString(4, user.getPassword());
-            statement.setInt(5, user.getId());
+            statement.setBoolean(5, user.isActive());
+            statement.setInt(6, user.getId());
             return statement.executeUpdate();
         } catch (SQLException e) {
             return 0;

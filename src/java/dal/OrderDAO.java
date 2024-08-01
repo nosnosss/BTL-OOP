@@ -196,4 +196,30 @@ public class OrderDAO extends ConnectDB{
         }
         return orders;
     }
+    public List<Order> getByDateRange(String startDate, String endDate) throws SQLException {
+        List<Order> orders = new ArrayList<>();
+        String sql = "SELECT * FROM orders WHERE order_date BETWEEN ? AND ?";
+    
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, startDate);
+            statement.setString(2, endDate);
+            ResultSet resultSet = statement.executeQuery();
+        
+            while (resultSet.next()) {
+                Order order = new Order();
+                order.setId(resultSet.getInt("id"));
+                order.setFullname(resultSet.getString("fullname"));
+                order.setPhone_number(resultSet.getString("phone_number"));
+                order.setAddress(resultSet.getString("address"));
+                order.setTotal_money(resultSet.getInt("total_money"));
+                order.setOrder_date(resultSet.getDate("order_date"));
+                order.setNote(resultSet.getString("note"));
+                order.setStatus(resultSet.getInt("status"));
+                orders.add(order);
+            }
+        }
+    
+        return orders;
+    }
+
 }
